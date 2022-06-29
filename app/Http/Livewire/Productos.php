@@ -5,6 +5,8 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Producto;
+use Barry\DomPDF\Facade as PDF;
+
 
 class Productos extends Component
 {
@@ -113,4 +115,12 @@ class Productos extends Component
             $record->delete();
         }
     }
+
+  public function generarPdf()
+    {
+        $productos = Producto::all();
+        $pdf = \PDF::loadView('livewire.productos.pdf', compact('productos'));
+        return $pdf->download('productos.pdf');
+    }
+ 
 }

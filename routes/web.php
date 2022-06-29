@@ -20,6 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::get('descargar-pdf',[Productos::class, 'descargarPDF'])->name('descargar-pdf');
 //Route Hooks - Do not delete//
 	Route::view('productos', 'livewire.productos.index')->middleware('auth');
