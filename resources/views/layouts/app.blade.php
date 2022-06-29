@@ -46,9 +46,11 @@
                         <li class="nav-item">
                             <a href="{{ url('/productos') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Productos</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/home') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Perfil</a>
+                        </li>
                     </ul>
                     @endauth()
-
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
