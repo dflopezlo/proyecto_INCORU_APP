@@ -11,7 +11,7 @@
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Explorar</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Acerca de</a></li>  
     </ul>
-    <p class="text-center text-muted">© 2021 Compañia INCORU, App</p>
+    <p class="text-center text-muted">© 2021 Compañía INCORU, App</p>
     <center>
     <div class="col-md-5  mb-3">
           <h5>Si quieres recibir mas información comunicate con nosotros</h5>
