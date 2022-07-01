@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\livewire\Productos;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,4 +25,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('descargar-pdf','App\Http\Livewire\Productos@generarPdf')->name('descargar-pdf');
 
 //Route Hooks - Do not delete//
-	Route::view('productos', 'livewire.productos.index')->middleware('auth');
+Route::view('productos', 'livewire.productos.index')->middleware('auth');

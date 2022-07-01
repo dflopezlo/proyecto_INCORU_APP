@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generar PDF</title>
-</head>
-<body>
-    
-</body>
-</html>
+<table class="table">
+    <thead class="thead">
+        <tr>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Stock</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach($productos as $row)
+        <tr>
+            <td>{{ $row->nombre }}</td>
+            <td>{{ $row->descripcion }}</td>
+            <td>{{ $row->stock }}</td>
+            <td>{{ $row->precio }}</td>
+            </td>
+            @endforeach
+    </tbody>
+</table>
