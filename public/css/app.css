@@ -76,7 +76,7 @@
   line-height: inherit; }
 
 .fa-border {
-  border: solid 0.08em #eee;
+  border: solid 0.08em rgb(154, 46, 46);
   border-radius: .1em;
   padding: .2em .25em .15em; }
 
@@ -174,7 +174,7 @@
   font-size: 2em; }
 
 .fa-inverse {
-  color: #fff; }
+  color: rgb(41, 9, 9); }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
 readers do not read off random characters that represent icons */
@@ -8695,16 +8695,16 @@ input[type=button].btn-block {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: rgb(49, 145, 138);
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: rgb(23, 150, 159);
 }
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.5);
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(43, 194, 191, 0.75);
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
@@ -8713,7 +8713,7 @@ input[type=button].btn-block {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: rgb(29, 145, 156);
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
