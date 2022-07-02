@@ -29,4 +29,5 @@ class HomeController extends Controller
     public function consumoAPI(){
         return view('api');
     }
+
 }
