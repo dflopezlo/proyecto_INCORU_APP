@@ -31,7 +31,7 @@
 						<div class="card border-danger mx-sm-1 p-3">
 							<div class="card border-danger text-danger p-3 my-card" ><span class="text-center fa fa-person-booth" aria-hidden="true"></span></div>
 							<div class="text-danger text-center mt-3"><h4>Productos</h4></div>
-							<div class="text-danger text-center mt-2"><h1>12</h1></div>
+							<div class="text-danger text-center mt-2"><h1>{{ Auth::user()->count() }}</h1></div>
 						</div>
 					</div>
 					<div class="col-md-3">

@@ -1,6 +1,6 @@
 @extends('layouts.footer')
 @extends('layouts.app')
-@section('title', __('Welcome'))
+@section('title', __('Bienvenido a INCORU APP'))
 @section('content')
 <div class="container-fluid">
 <div class="row justify-content-center">
@@ -11,8 +11,8 @@
               <h5>  
             @guest
             <h1 class="text-center">Aplicación Intermediaria de Comercial Rural</h1>
-			@else
-					Hi {{ Auth::user()->name }}, Welcome back to {{ config('app.name', 'Laravel') }}.
+            @else
+					{{ Auth::user()->name }}, Así ven tus compradores la página de inicio al encontrar {{ __('INCORU APP') }}.
             @endif	
 				</h5>
             </div>
