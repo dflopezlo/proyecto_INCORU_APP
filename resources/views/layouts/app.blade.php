@@ -16,7 +16,10 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+    
+    <!--llama a la libreria ploty de JS para generar graficas-->
+    <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script> 
+    
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @livewireStyles
@@ -48,6 +51,9 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('/home') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Perfil</a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/api') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Consultar consumo de API</a>
                         </li>
                     </ul>
                     @endauth()

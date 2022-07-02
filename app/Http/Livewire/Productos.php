@@ -6,6 +6,8 @@ use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Producto;
 use Barryvdh\DomPDF\ServiceProvider;
+use Barryvdh\DomPDF\Facade as PDF;
+
 
 class Productos extends Component
 {
@@ -118,8 +120,9 @@ class Productos extends Component
   public function generarPdf()
     {
         $productos = Producto::all();
-        $pdf = PDF::loadView('descargarPdf', compact('productos'));
+        $pdf = PDF::loadView('livewire.productos.descargarPdf', compact('productos'));
         return $pdf->download('productos.pdf');
+        
     }
  
 }
