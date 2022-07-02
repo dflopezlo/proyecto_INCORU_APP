@@ -24,5 +24,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('descargar-pdf','App\Http\Livewire\Productos@generarPdf')->name('descargar-pdf');
 
+Route::get('/api', [App\Http\Controllers\HomeController::class, 'consumoAPI'])->name('api');
+
 //Route Hooks - Do not delete//
 Route::view('productos', 'livewire.productos.index')->middleware('auth');
